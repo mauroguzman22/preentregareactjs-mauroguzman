@@ -3,6 +3,8 @@
 
 export const Logo = () => {
   return (
-    <div>Logo</div>
+    <div>
+        <h4>Skynet AR</h4>
+    </div>
   )
 }

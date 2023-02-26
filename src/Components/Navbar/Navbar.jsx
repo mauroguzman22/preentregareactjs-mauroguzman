@@ -1,4 +1,3 @@
-
 import { CartWidget } from "../CardWidget/CartWidget";
 import { Logo } from "../Logo/Logo";
 import styles from "./Navbar.module.css";
