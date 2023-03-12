@@ -1,8 +1,30 @@
+import { useState, useEffect } from "react";
+import { products } from "../../productsMock.js";
+import ItemList from "../ItemList/ItemList.jsx";
 
 
+export const ItemListContainer = () => {
+  const [items, setItems] = useState([]);
 
-export const ItemListContainer = ( {greeting} ) => {
+  useEffect(() => {
+    const productList = new Promise((resolve, reject) => {
+      resolve(products);
+    });
+
+    productList
+      .then((res) => {
+        setItems(res);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  console.log(items);
+
   return (
-    <div> <h1> {greeting} </h1> </div>
-  )
-}
+    <div>
+      <ItemList items={items} />
+    </div>
+  );
+};
