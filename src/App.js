@@ -1,3 +1,4 @@
+import ConsumiendoApis from "./Components/ConsumiendoApis/ConsumiendoApis.jsx";
 import { Footer } from "./Components/Footer/Footer.jsx";
 import ItemCount from "./Components/itemCount/ItemCount.jsx";
 import { ItemListContainer } from "./Components/ItemListContainer/ItemListContainer.jsx";
@@ -12,11 +13,10 @@ function App() {
 
   return (
     <div>
-      <Navbar />
-      <ItemListContainer/>
-      <ProductCard/>
-     {/*  <ItemCount stock={5} initial={1} onAdd= {onAdd}/> */}
-      <Footer />
+    <Navbar />
+    <ItemListContainer/>
+    <ConsumiendoApis />
+    <Footer />
     </div>
   );
 }
