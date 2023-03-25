@@ -1,10 +1,19 @@
 import React from "react";
+import Item from "../Item/Item";
 
 const ItemList = ({ items }) => {
   return (
-    <div>
+    <div style={{
+      backgroundColor: "black",
+      display: "flex",
+      width: "100%",
+      minHeight: "100vh",
+      justifyContent: "space-evenly",
+      alignItems: "center",
+
+    } }>
       {items.map((element) => {
-        return <h1> {element.title}</h1>;
+        return <Item key={element.id} element={element} />;
       })}
     </div>
   );

@@ -14,7 +14,7 @@ function App() {
     <div>
       <Navbar />
       <ItemListContainer/>
-      <ProductCard tittle={"Producto uno"} price={1500} />
+      <ProductCard/>
      {/*  <ItemCount stock={5} initial={1} onAdd= {onAdd}/> */}
       <Footer />
     </div>
