@@ -1,6 +1,8 @@
+import React from 'react';
 import { useState, useEffect } from "react";
 import { products } from "../../productsMock.js";
 import ItemList from "../ItemList/ItemList.jsx";
+
 
 
 export const ItemListContainer = () => {

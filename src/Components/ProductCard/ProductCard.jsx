@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const ProductCard = (props) => {
   let { tittle, price } = props;
 
