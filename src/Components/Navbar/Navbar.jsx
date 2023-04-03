@@ -11,9 +11,15 @@ export const Navbar = () => {
         <Logo />
       </Link>
       <ul className={styles.containerList}>
-        <Link to="/" className={styles.navbarItem}>Todo</Link>
-        <Link to="/category/vuelos" className={styles.navbarItem}>Vuelos</Link>
-        <Link to="/category/ofertas" className={styles.navbarItem}>Ofertas</Link>
+        <Link to="/" className={styles.navbarItem}>
+          Todo
+        </Link>
+        <Link to="/category/vuelos" className={styles.navbarItem}>
+          Vuelos
+        </Link>
+        <Link to="/category/ofertas" className={styles.navbarItem}>
+          Ofertas
+        </Link>
       </ul>
       <CartWidget />
     </div>
