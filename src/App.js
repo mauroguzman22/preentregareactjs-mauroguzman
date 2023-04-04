@@ -15,6 +15,9 @@ import CartContextProvider from "./context/CartContext.jsx";
 
 
 
+
+
+
 function App() {
   const onAdd = (cantidad) => {
     console.log(`se agrego al carrito ${cantidad} elemtos`);
@@ -22,7 +25,7 @@ function App() {
 
   return (
     <BrowserRouter>
-    <CartContextProvider>
+  <CartContextProvider>
       <Navbar />
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
